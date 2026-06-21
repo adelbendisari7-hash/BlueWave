@@ -143,6 +143,10 @@ function catIcon(category, cls = "") {
   return `<img src="${src}" alt="" class="cat-icon-img${cls ? " " + cls : ""}">`;
 }
 
+function encodeImagePath(path) {
+  return path.split('/').map(encodeURIComponent).join('/');
+}
+
 function renderProducts(category) {
   const grid = document.getElementById("products-grid");
   if (!grid) return;
@@ -198,13 +202,14 @@ function renderProducts(category) {
 
 function loadCardImages(products) {
   products.forEach(p => {
-    const imgs = imagesManifest?.[p.ref];
-    if (!Array.isArray(imgs) || imgs.length === 0) return;
+    const raw  = imagesManifest?.[p.ref];
+    const imgs = Array.isArray(raw) ? raw : (raw ? [raw] : []);
+    if (imgs.length === 0) return;
     const imgEl = document.getElementById(`card-img-${p.id}`);
     const fbEl  = document.getElementById(`card-fallback-${p.id}`);
     if (!imgEl) return;
     imgEl.onerror = () => { imgEl.style.display = "none"; if (fbEl) fbEl.style.display = "flex"; };
-    imgEl.src = imgs[0];
+    imgEl.src = encodeImagePath(imgs[0]);
     imgEl.style.display = "block";
     if (fbEl) fbEl.style.display = "none";
   });
@@ -864,7 +869,8 @@ async function loadGallery(ref, altName) {
   noImg.style.display   = "flex";
   thumbs.innerHTML      = "";
 
-  galleryImages = Array.isArray(imagesManifest?.[ref]) ? imagesManifest[ref] : [];
+  const raw = imagesManifest?.[ref];
+  galleryImages = Array.isArray(raw) ? raw : (raw ? [raw] : []);
 
   if (galleryImages.length === 0) {
     noImg.style.display   = "flex";
@@ -887,7 +893,7 @@ function showGalleryImage(idx) {
 
   const mainImg = document.getElementById("gallery-main-img");
   const noImg   = document.getElementById("gallery-no-img");
-  mainImg.src   = galleryImages[galleryIndex];
+  mainImg.src   = encodeImagePath(galleryImages[galleryIndex]);
   mainImg.alt   = "";
   mainImg.style.display = "";
   noImg.style.display   = "none";
@@ -901,7 +907,7 @@ function renderThumbs(altName) {
   const thumbs = document.getElementById("gallery-thumbs");
   thumbs.innerHTML = galleryImages.map((src, i) =>
     `<img class="gallery-thumb${i === 0 ? " active" : ""}"
-          src="${src}" alt="${altName} ${i + 1}"
+          src="${encodeImagePath(src)}" alt="${altName} ${i + 1}"
           data-idx="${i}" loading="lazy"
           onerror="this.style.display='none'" />`
   ).join("");
