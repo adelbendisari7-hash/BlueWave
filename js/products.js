@@ -135,6 +135,14 @@ const PRODUCTS = [
     descA: "حوض سباحة نفخ مستطيل Swim Center بـ3 حلقات نفخ لجدران متينة. بطانة PVC ثنائية الطبقات. السعة: ~600 لتر. نفخ سريع في دقائق. مقبضان جانبيان للنقل السهل. مثالي للحدائق والتراسات والشرفات.",
     price: 11000, badge: null, badgeA: null
   },
+  {
+    id: "ap-008", category: "autoportante", ref: "57181",
+    nameF: "Intex Piscine Gonflable Swim Center Mandarin 2.29m × 1.47m × 46cm",
+    nameA: "إنتيكس حوض Swim Center Mandarin نفخ 2.29م × 1.47م × 46سم",
+    descF: "Piscine gonflable rectangulaire Swim Center aux couleurs mandarin vives et estivales. 3 anneaux gonflables pour des parois solides et stables. PVC bi-couche résistant aux UV. Capacité : env. 580 L. Gonflage rapide en quelques minutes. Légère et facile à déplacer. Idéale pour jardins et terrasses. De 3 ans et plus.",
+    descA: "حوض سباحة نفخ مستطيل Swim Center بألوان ماندارين زاهية. 3 حلقات نفخ لجدران متينة ومستقرة. PVC ثنائي الطبقات مقاوم للأشعة فوق البنفسجية. السعة: ~580 لتر. نفخ سريع في دقائق. خفيف وسهل النقل. مثالي للحدائق. من 3 سنوات فأكثر.",
+    price: 11500, badge: null, badgeA: null
+  },
 
   // ══════════════════════════════════════════════════════
   // 3. PISCINES ENFANTS & CENTRES DE JEUX
@@ -186,6 +194,38 @@ const PRODUCTS = [
     descF: "Mini piscine gonflable extra-compacte pour nourrissons. Diamètre Ø 61 cm et parois très basses (22 cm) pour une sécurité maximale dès les premiers mois. PVC souple et doux. Capacité : env. 26 L. Idéale pour rafraîchir bébé à la maison ou en déplacement. Légère et facile à gonfler à la bouche.",
     descA: "حوض نفخ ميني فائق الصغر للرضع. قطر 61سم وجدران منخفضة جداً (22سم) لأقصى أمان من الأشهر الأولى. PVC لين وناعم. السعة: ~26 لتر. مثالي لتبريد الرضيع في المنزل أو أثناء السفر. خفيف ونفخه بالفم ممكن.",
     price: 1500, badge: "Nouveau-né", badgeA: "للمولود الجديد"
+  },
+  {
+    id: "en-007", category: "enfants", ref: "57422",
+    nameF: "Intex Piscine Gonflable Sunset Glow (3 boudins) Ø 1.47m × 33cm",
+    nameA: "إنتيكس حوض Sunset Glow نفخ (3 حلقات) قطر 1.47م × 33سم",
+    descF: "Piscine gonflable ronde Sunset Glow à 3 anneaux gonflables. Couleurs tropicales vives et estivales pour une ambiance vacances. PVC bi-couche durable résistant aux UV. Capacité : env. 220 L. Gonflage facile à la bouche ou avec pompe. Légère et facile à transporter. Idéale pour les tout-petits. De 3 ans et plus.",
+    descA: "حوض نفخ دائري Sunset Glow بـ3 حلقات نفخ. ألوان استوائية زاهية لأجواء العطلة. PVC ثنائي الطبقات مقاوم للأشعة فوق البنفسجية. السعة: ~220 لتر. نفخ سهل. خفيف وسهل النقل. مثالي للأطفال الصغار. من 3 سنوات فأكثر.",
+    price: 4800, badge: null, badgeA: null
+  },
+  {
+    id: "en-008", category: "enfants", ref: "57147",
+    nameF: "Intex Centre de Jeux Gonflables My Garden 2.90m × 1.80m × 1.04m",
+    nameA: "إنتيكس مركز ألعاب My Garden نفخ 2.90م × 1.80م × 1.04م",
+    descF: "Grand centre de jeux aquatiques gonflable My Garden — un jardin aquatique complet pour les enfants ! Zone de pataugeoire, mini-toboggan, arcs gonflables et asperseur d'eau intégré. PVC haute qualité résistant. Facile à gonfler et dégonfler. Des heures de jeux garanties dans le jardin. De 3 à 6 ans.",
+    descA: "مركز ألعاب مائية نفخ كبير My Garden — حديقة مائية كاملة! منطقة خوض ومزلقة صغيرة وأقواس نفخ ورشاش ماء مدمج. PVC عالي الجودة. سهل النفخ والتفريغ. ساعات من المتعة في الحديقة. من 3 إلى 6 سنوات.",
+    price: 22000, badge: "Fun Garanti", badgeA: "متعة مضمونة"
+  },
+  {
+    id: "en-009", category: "enfants", ref: "58431",
+    nameF: "Intex Piscine Gonflable Flying Saucer Ø 1.88m × 46cm",
+    nameA: "إنتيكس حوض نفخ Flying Saucer قطر 1.88م × 46سم",
+    descF: "Piscine gonflable design soucoupe volante aux graphismes colorés et futuristes. 3 anneaux gonflables pour une structure robuste et stable. PVC haute qualité résistant aux UV. Capacité : env. 480 L. Gonflage rapide. Légère et facile à ranger. Un design original et amusant pour enfants et adultes. De 3 ans et plus.",
+    descA: "حوض نفخ بتصميم طبق طائر ورسومات ملونة مستقبلية. 3 حلقات نفخ لهيكل متين ومستقر. PVC عالي الجودة مقاوم للأشعة فوق البنفسجية. السعة: ~480 لتر. نفخ سريع. خفيف وسهل التخزين. تصميم مرح ومميز. من 3 سنوات فأكثر.",
+    price: 5500, badge: null, badgeA: null
+  },
+  {
+    id: "en-010", category: "enfants", ref: "58426",
+    nameF: "Intex Piscine Gonflable Crystal Blue Ø 1.47m × 33cm",
+    nameA: "إنتيكس حوض Crystal Blue نفخ قطر 1.47م × 33سم",
+    descF: "Piscine gonflable ronde Crystal Blue aux couleurs bleu cristal apaisantes. 3 anneaux gonflables pour des parois solides. PVC bi-couche résistant aux UV. Capacité : env. 220 L. Gonflage facile à la bouche ou avec pompe. Légère, facile à transporter et à ranger. Parfaite pour les jeunes enfants. De 3 ans et plus.",
+    descA: "حوض نفخ دائري Crystal Blue بألوان أزرق كريستالي هادئة. 3 حلقات نفخ لجدران متينة. PVC ثنائي الطبقات مقاوم للأشعة فوق البنفسجية. السعة: ~220 لتر. نفخ سهل. خفيف وسهل التخزين. مثالي للأطفال الصغار. من 3 سنوات فأكثر.",
+    price: 3800, badge: null, badgeA: null
   },
 
   // ══════════════════════════════════════════════════════
@@ -258,6 +298,22 @@ const PRODUCTS = [
     descF: "Bateau gonflable Explorer 100 pour 1 personne — compact et facile à transporter. 3 chambres à air indépendantes pour sécurité maximale. PVC résistant aux UV. Siège confortable avec dossier gonflable. Rame aluminium incluse. Pompe incluse. Charge max : 60 kg. Kit réparation fourni. Parfait pour se détendre et pagayer seul.",
     descA: "قارب نفخ Explorer 100 لشخص واحد — مدمج وسهل الحمل. 3 حجرات هواء مستقلة لأقصى أمان. PVC مقاوم للأشعة فوق البنفسجية. مقعد مريح بمسند ظهر. مجداف ألومنيوم. مضخة. الحمولة القصوى: 60كغ. طقم إصلاح. مثالي للاسترخاء والتجديف الفردي.",
     price: 4000, badge: null, badgeA: null
+  },
+  {
+    id: "nt-005", category: "nautique", ref: "68241",
+    nameF: "Intex Stand Up Paddle Gonflable AquaQuest Pro 3.20m × 81cm × 15cm",
+    nameA: "إنتيكس لوح Stand Up Paddle نفخ AquaQuest Pro 3.20م × 81سم × 15سم",
+    descF: "Stand Up Paddle gonflable AquaQuest Pro — légèreté et performance réunies. Construction Drop Stitch double paroi ultra-rigide pour une stabilité parfaite sur l'eau. Pad EVA antidérapant confortable. 3 ailerons amovibles pour une direction précise. Charge max : 120 kg. Kit complet : pagaie réglable + pompe à main + sac de transport + leash de sécurité.",
+    descA: "لوح Stand Up Paddle نفخ AquaQuest Pro — الخفة والأداء معاً. بناء Drop Stitch مزدوج الجدار فائق الصلابة للاستقرار المثالي على الماء. وسادة EVA مضادة للانزلاق. 3 زعانف قابلة للفك للتوجيه الدقيق. الحمولة القصوى: 120كغ. طقم كامل: مجداف قابل للضبط + مضخة + حقيبة + حزام أمان.",
+    price: 85000, badge: "Sport Pro", badgeA: "رياضة احترافية"
+  },
+  {
+    id: "nt-006", category: "nautique", ref: "58332",
+    nameF: "Intex Bateau Gonflable Explorer Pro 300 2.44m × 1.17m × 36cm",
+    nameA: "إنتيكس قارب Explorer Pro 300 نفخ 2.44م × 1.17م × 36سم",
+    descF: "Bateau gonflable Explorer Pro 300 pour 3 personnes — l'aventure en sécurité sur l'eau. 3 chambres à air indépendantes pour flottaison garantie même en cas de crevaison. Fond rigide gonflé pour plus de stabilité. PVC haute résistance anti-UV. 2 sièges adultes avec dossier + strapontin. 2 rames aluminium + pompe incluses. Charge max : 180 kg.",
+    descA: "قارب نفخ Explorer Pro 300 لـ3 أشخاص — المغامرة بأمان على الماء. 3 حجرات هواء مستقلة للطفو المضمون. قاع صلب نفخ للاستقرار. PVC عالي المقاومة. مقعدان بمسند ظهر + مقعد ثالث. مجداف ألومنيوم + مضخة مضمونة. الحمولة القصوى: 180كغ.",
+    price: 11000, badge: "3 Personnes", badgeA: "3 أشخاص"
   },
 
   // ══════════════════════════════════════════════════════

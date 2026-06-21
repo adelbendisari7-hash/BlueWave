@@ -145,6 +145,24 @@ const PRODUCT_SPECS = {
     filtre:      "Non incluse",
     age:         "3 ans et +"
   },
+  "57181": {
+    dimensions:  "229 × 147 × 46 cm",
+    capacite:    "580 L (à 80%)",
+    poids:       "4,5 kg (approx.)",
+    structure:   "Gonflable 3 anneaux rectangulaire",
+    materiau:    "PVC vinyl bi-couche résistant aux UV",
+    filtre:      "Non incluse",
+    age:         "3 ans et +"
+  },
+  "58431": {
+    dimensions:  "Ø 188 × 46 cm",
+    capacite:    "480 L (à 80%)",
+    poids:       "3,5 kg (approx.)",
+    structure:   "Gonflable 3 anneaux, design soucoupe volante",
+    materiau:    "PVC vinyl bi-couche résistant aux UV",
+    filtre:      "Non incluse",
+    age:         "3 ans et +"
+  },
 
   // ── PISCINES ENFANTS ─────────────────────────────────────
 
@@ -201,6 +219,33 @@ const PRODUCT_SPECS = {
     materiau:    "PVC vinyl 8ga anneaux / 7ga fond",
     filtre:      "Non incluse",
     age:         "1 à 3 ans"
+  },
+  "57422": {
+    dimensions:  "Ø 147 × 33 cm",
+    capacite:    "220 L (à 80%)",
+    poids:       "2 kg (approx.)",
+    structure:   "Gonflable 3 anneaux, fond souple",
+    materiau:    "PVC vinyl bi-couche, motif Sunset Glow",
+    filtre:      "Non incluse",
+    age:         "3 ans et +"
+  },
+  "57147": {
+    dimensions:  "290 × 180 × 104 cm",
+    capacite:    "Pataugeoire : env. 100 L",
+    poids:       "6 kg (approx.)",
+    structure:   "Gonflable : pataugeoire + toboggan + arcs + asperseur",
+    materiau:    "PVC vinyl haute qualité",
+    filtre:      "Non incluse",
+    age:         "3 à 6 ans"
+  },
+  "58426": {
+    dimensions:  "Ø 147 × 33 cm",
+    capacite:    "220 L (à 80%)",
+    poids:       "2 kg (approx.)",
+    structure:   "Gonflable 3 anneaux, fond souple",
+    materiau:    "PVC vinyl bi-couche, motif Crystal Blue",
+    filtre:      "Non incluse",
+    age:         "3 ans et +"
   },
 
   // ── BÂCHES DE PROTECTION ─────────────────────────────────
@@ -266,6 +311,24 @@ const PRODUCT_SPECS = {
     materiau:    "PVC résistant aux UV",
     charge_max:  "60 kg — 1 personne",
     contenu:     "1 rame aluminium + pompe inclus",
+    age:         "6 ans et +"
+  },
+  "68241": {
+    dimensions:  "320 × 81 × 15 cm (gonflé)",
+    poids:       "8,5 kg",
+    structure:   "Drop Stitch double paroi, 3 ailerons amovibles",
+    materiau:    "PVC haute densité, pad EVA antidérapant",
+    charge_max:  "120 kg",
+    contenu:     "Pagaie réglable + pompe + sac de transport + leash",
+    age:         "14 ans et +"
+  },
+  "58332": {
+    dimensions:  "244 × 117 × 36 cm (gonflé)",
+    poids:       "5,4 kg",
+    structure:   "3 chambres à air indépendantes, fond gonflé rigide",
+    materiau:    "PVC haute résistance anti-UV",
+    charge_max:  "180 kg — 3 personnes",
+    contenu:     "2 rames aluminium + pompe inclus",
     age:         "6 ans et +"
   },
 
