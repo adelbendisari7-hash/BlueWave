@@ -5,9 +5,18 @@
 // ── State ────────────────────────────────────────────────
 let activeCategory = "all";
 let cart = []; // [{product, qty}]
+let imagesManifest = null;
+
+async function loadManifest() {
+  try {
+    const r = await fetch("images-manifest.json");
+    imagesManifest = await r.json();
+  } catch { imagesManifest = {}; }
+}
 
 // ── DOM Ready ────────────────────────────────────────────
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+  await loadManifest();
   initParticles();
   initScrollHeader();
   initHamburger();
@@ -189,22 +198,15 @@ function renderProducts(category) {
 
 function loadCardImages(products) {
   products.forEach(p => {
-    fetch(`php/images.php?ref=${encodeURIComponent(p.ref)}`)
-      .then(r => r.json())
-      .then(imgs => {
-        if (!Array.isArray(imgs) || imgs.length === 0) return;
-        const imgEl = document.getElementById(`card-img-${p.id}`);
-        const fbEl  = document.getElementById(`card-fallback-${p.id}`);
-        if (!imgEl) return;
-        imgEl.onerror = () => {
-          imgEl.style.display = "none";
-          if (fbEl) fbEl.style.display = "flex";
-        };
-        imgEl.src = imgs[0];
-        imgEl.style.display = "block";
-        if (fbEl) fbEl.style.display = "none";
-      })
-      .catch(() => {});
+    const imgs = imagesManifest?.[p.ref];
+    if (!Array.isArray(imgs) || imgs.length === 0) return;
+    const imgEl = document.getElementById(`card-img-${p.id}`);
+    const fbEl  = document.getElementById(`card-fallback-${p.id}`);
+    if (!imgEl) return;
+    imgEl.onerror = () => { imgEl.style.display = "none"; if (fbEl) fbEl.style.display = "flex"; };
+    imgEl.src = imgs[0];
+    imgEl.style.display = "block";
+    if (fbEl) fbEl.style.display = "none";
   });
 }
 
@@ -494,7 +496,7 @@ async function handleOrderSubmit(e) {
   formData.append("lang",           currentLang);
 
   try {
-    const res  = await fetch("php/send-order.php", { method: "POST", body: formData });
+    const res  = await fetch("api/send-order", { method: "POST", headers: {"Content-Type":"application/json"}, body: JSON.stringify(Object.fromEntries(formData)) });
     const data = await res.json();
     showModalResult(data.success);
   } catch {
@@ -862,13 +864,7 @@ async function loadGallery(ref, altName) {
   noImg.style.display   = "flex";
   thumbs.innerHTML      = "";
 
-  try {
-    const res  = await fetch(`php/images.php?ref=${encodeURIComponent(ref)}`);
-    const imgs = await res.json();
-    galleryImages = Array.isArray(imgs) ? imgs : [];
-  } catch {
-    galleryImages = [];
-  }
+  galleryImages = Array.isArray(imagesManifest?.[ref]) ? imagesManifest[ref] : [];
 
   if (galleryImages.length === 0) {
     noImg.style.display   = "flex";
