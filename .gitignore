@@ -1,0 +1,10 @@
+# Sensitive config (SMTP credentials)
+php/config.php
+
+# Orders data (private customer info)
+php/orders/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini

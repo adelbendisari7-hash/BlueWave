@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BlueWave Pools — Distributeur officiel Intex en Algérie. Piscines métalliques, gonflables, accessoires. Livraison partout en Algérie. Paiement à la livraison." />
+  <meta name="keywords" content="piscine intex algerie, piscine gonflable, piscine metallique, bluewave, livraison algerie" />
+  <title>BlueWave Pools | Piscines Intex Originales — Algérie</title>
+
+  <!-- Favicon (logo) -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Nunito:wght@300;400;500;600;700&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════
+     HEADER / NAVBAR
+     ════════════════════════════════════════════ -->
+<header id="header">
+  <nav class="navbar">
+    <!-- Logo -->
+    <a href="#hero" class="logo">
+      <img src="images/logo.png" alt="BlueWave Pools Logo" onerror="this.style.display='none'" />
+      <div class="logo-text">
+        <span>BlueWave</span>
+        <span>POOLS</span>
+      </div>
+    </a>
+
+    <!-- Nav Links (desktop) -->
+    <ul class="nav-links">
+      <li><a href="#hero"     data-i18n="nav.home">Accueil</a></li>
+      <li><a href="#products" data-i18n="nav.products">Produits</a></li>
+      <li><a href="#about"    data-i18n="nav.about">À Propos</a></li>
+      <li><a href="#contact"  data-i18n="nav.contact">Contact</a></li>
+    </ul>
+
+    <!-- Actions -->
+    <div class="nav-actions">
+      <button class="lang-btn" id="lang-toggle" title="Changer la langue">
+        <span>🌐</span>
+        <span class="lang-label">العربية</span>
+      </button>
+      <button class="cart-nav-btn" id="cart-nav-btn" aria-label="Mon Panier">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        <span class="cart-badge" id="cart-badge" style="display:none">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#hero"     data-i18n="nav.home">Accueil</a>
+  <a href="#products" data-i18n="nav.products">Produits</a>
+  <a href="#about"    data-i18n="nav.about">À Propos</a>
+  <a href="#contact"  data-i18n="nav.contact">Contact</a>
+</div>
+
+<!-- ════════════════════════════════════════════
+     HERO SECTION
+     ════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-particles"></div>
+
+  <div class="hero-content">
+    <!-- Text -->
+    <div class="hero-text">
+      <div class="hero-badge" data-i18n="hero.badge">Distributeur Officiel Intex en Algérie</div>
+
+      <h1 class="hero-title">
+        <span class="line1" data-i18n="hero.title1">Vivez l'été</span>
+        <span class="line2" data-i18n="hero.title2">à plein régime</span>
+      </h1>
+
+      <p class="hero-subtitle" data-i18n="hero.subtitle">
+        Piscines Intex originales livrées partout en Algérie. Qualité garantie, prix imbattables.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#products" class="btn-primary">
+          <img class="cat-icon-img btn-icon-img" src="images/icons/default.png" alt=""> <span data-i18n="hero.cta">Découvrir nos produits</span>
+        </a>
+        <a href="#contact" class="btn-secondary">
+          <img class="cat-icon-img btn-icon-img" src="images/icons/support.png" alt=""> <span data-i18n="hero.ctaSecondary">Nous contacter</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Visual Card -->
+    <div class="hero-visual">
+      <div class="hero-card-float">
+        <div class="hero-pool-visual">
+          <div class="pool-icon"><img src="images/icons/autoportante.png" alt="" style="width:80px;height:80px;object-fit:contain;filter:brightness(0) invert(1) drop-shadow(0 4px 20px rgba(0,180,216,0.5))"></div>
+          <svg class="pool-waves" viewBox="0 0 400 60" preserveAspectRatio="none">
+            <path d="M0,30 Q50,10 100,30 T200,30 T300,30 T400,30 L400,60 L0,60Z" fill="rgba(0,180,216,0.15)"/>
+            <path d="M0,40 Q50,20 100,40 T200,40 T300,40 T400,40 L400,60 L0,60Z" fill="rgba(0,180,216,0.1)">
+              <animate attributeName="d" dur="3s" repeatCount="indefinite"
+                values="M0,40 Q50,20 100,40 T200,40 T300,40 T400,40 L400,60 L0,60Z;
+                        M0,40 Q50,55 100,40 T200,40 T300,40 T400,40 L400,60 L0,60Z;
+                        M0,40 Q50,20 100,40 T200,40 T300,40 T400,40 L400,60 L0,60Z"/>
+            </path>
+          </svg>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>100%</strong>
+            <span>Produits Originaux</span>
+          </div>
+          <div class="hero-stat">
+            <strong>58</strong>
+            <span>Wilayas livrées</span>
+          </div>
+          <div class="hero-stat">
+            <strong>COD</strong>
+            <span>Paiement livraison</span>
+          </div>
+          <div class="hero-stat">
+            <strong>ZR</strong>
+            <span>Express disponible</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave -->
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 Q180,0 360,40 T720,40 T1080,40 T1440,40 L1440,80 L0,80Z" fill="var(--navy-mid)" opacity="0.5"/>
+      <path d="M0,50 Q180,20 360,50 T720,50 T1080,50 T1440,50 L1440,80 L0,80Z" fill="var(--navy-mid)"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     TRUST BADGES
+     ════════════════════════════════════════════ -->
+<section id="trust">
+  <div class="trust-grid">
+    <div class="trust-item animate-on-scroll">
+      <div class="trust-icon"><img class="cat-icon-img trust-icon-img" src="images/icons/original.png" alt=""></div>
+      <div>
+        <h4 data-i18n="trust.t1">100% Original</h4>
+        <p data-i18n="trust.s1">Produits Intex authentiques</p>
+      </div>
+    </div>
+    <div class="trust-item animate-on-scroll" style="transition-delay:0.1s">
+      <div class="trust-icon"><img class="cat-icon-img trust-icon-img" src="images/icons/livraison.png" alt=""></div>
+      <div>
+        <h4 data-i18n="trust.t2">Livraison Nationale</h4>
+        <p data-i18n="trust.s2">Partout en Algérie</p>
+      </div>
+    </div>
+    <div class="trust-item animate-on-scroll" style="transition-delay:0.2s">
+      <div class="trust-icon"><img class="cat-icon-img trust-icon-img" src="images/icons/paiement.png" alt=""></div>
+      <div>
+        <h4 data-i18n="trust.t3">Paiement Livraison</h4>
+        <p data-i18n="trust.s3">COD / ZR Express</p>
+      </div>
+    </div>
+    <div class="trust-item animate-on-scroll" style="transition-delay:0.3s">
+      <div class="trust-icon"><img class="cat-icon-img trust-icon-img" src="images/icons/support.png" alt=""></div>
+      <div>
+        <h4 data-i18n="trust.t4">Support Client</h4>
+        <p data-i18n="trust.s4">Disponible sur WhatsApp</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     PRODUCTS SECTION
+     ════════════════════════════════════════════ -->
+<section id="products">
+  <div class="section-header animate-on-scroll">
+    <p class="section-label">INTEX ALGÉRIE</p>
+    <h2 class="section-title" data-i18n="products.title">Nos Produits</h2>
+  </div>
+
+  <!-- Category Tabs -->
+  <div class="cat-tabs" role="tablist">
+    <button class="cat-tab active" data-cat="all" role="tab">
+      <img class="cat-icon cat-icon-img" src="images/icons/default.png" alt="">
+      <span class="cat-label" data-i18n="categories.all">Tout voir</span>
+    </button>
+    <button class="cat-tab" data-cat="tubulaire" role="tab">
+      <img class="cat-icon cat-icon-img" src="images/icons/tubulaire.png" alt="">
+      <span class="cat-label" data-i18n="categories.tubulaire">Piscines Tubulaires</span>
+    </button>
+    <button class="cat-tab" data-cat="autoportante" role="tab">
+      <img class="cat-icon cat-icon-img" src="images/icons/autoportante.png" alt="">
+      <span class="cat-label" data-i18n="categories.autoportante">Piscines Gonflables</span>
+    </button>
+    <button class="cat-tab" data-cat="enfants" role="tab">
+      <img class="cat-icon cat-icon-img" src="images/icons/enfants.png" alt="">
+      <span class="cat-label" data-i18n="categories.enfants">Piscines Enfants</span>
+    </button>
+    <button class="cat-tab" data-cat="baches" role="tab">
+      <img class="cat-icon cat-icon-img" src="images/icons/baches.png" alt="">
+      <span class="cat-label" data-i18n="categories.baches">Bâches de Protection</span>
+    </button>
+    <button class="cat-tab" data-cat="nautique" role="tab">
+      <img class="cat-icon cat-icon-img" src="images/icons/nautique.png" alt="">
+      <span class="cat-label" data-i18n="categories.nautique">Sports Nautiques</span>
+    </button>
+    <button class="cat-tab" data-cat="jeux" role="tab">
+      <img class="cat-icon cat-icon-img" src="images/icons/jeux.png" alt="">
+      <span class="cat-label" data-i18n="categories.jeux">Jeux & Bouées</span>
+    </button>
+    <button class="cat-tab" data-cat="accessoires" role="tab">
+      <img class="cat-icon cat-icon-img" src="images/icons/accessoires.png" alt="">
+      <span class="cat-label" data-i18n="categories.accessoires">Filtration & Accessoires</span>
+    </button>
+  </div>
+
+  <!-- Products Grid -->
+  <div class="products-grid" id="products-grid">
+    <!-- Rendered by JS -->
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     ABOUT / WHY US
+     ════════════════════════════════════════════ -->
+<section id="about">
+  <div class="about-inner">
+    <div class="about-text animate-on-scroll">
+      <div class="section-header">
+        <p class="section-label">BLUEWAVE</p>
+        <h2 class="section-title" data-i18n="about.title">Pourquoi choisir BlueWave ?</h2>
+      </div>
+      <p data-i18n="about.subtitle">Votre spécialiste piscines Intex en Algérie</p>
+    </div>
+
+    <div class="about-visual">
+      <div class="reason-card animate-on-scroll">
+        <div class="reason-icon"><img class="cat-icon-img reason-icon-img" src="images/icons/original.png" alt=""></div>
+        <h3 data-i18n="about.r1t">Produits 100% Originaux</h3>
+        <p data-i18n="about.r1d">Nous ne vendons que des produits Intex authentiques avec garantie constructeur.</p>
+      </div>
+      <div class="reason-card animate-on-scroll" style="transition-delay:0.1s">
+        <div class="reason-icon"><img class="cat-icon-img reason-icon-img" src="images/icons/livraison.png" alt=""></div>
+        <h3 data-i18n="about.r2t">Livraison Rapide</h3>
+        <p data-i18n="about.r2d">Livraison à domicile ou bureau ZR Express dans toute l'Algérie.</p>
+      </div>
+      <div class="reason-card animate-on-scroll" style="transition-delay:0.2s">
+        <div class="reason-icon"><img class="cat-icon-img reason-icon-img" src="images/icons/paiement.png" alt=""></div>
+        <h3 data-i18n="about.r3t">Paiement à la Livraison</h3>
+        <p data-i18n="about.r3d">Payez uniquement à la réception de votre commande. Zéro risque.</p>
+      </div>
+      <div class="reason-card animate-on-scroll" style="transition-delay:0.3s">
+        <div class="reason-icon"><img class="cat-icon-img reason-icon-img" src="images/icons/support.png" alt=""></div>
+        <h3 data-i18n="about.r4t">Service Client Réactif</h3>
+        <p data-i18n="about.r4d">Notre équipe répond rapidement sur WhatsApp pour tout renseignement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     CONTACT SECTION
+     ════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="section-header animate-on-scroll">
+    <p class="section-label">BLUEWAVE</p>
+    <h2 class="section-title" data-i18n="contact.title">Contactez-Nous</h2>
+    <p style="color:var(--text-muted);margin-top:0.8rem;font-size:0.95rem;" data-i18n="contact.subtitle">
+      Notre équipe est disponible pour répondre à toutes vos questions
+    </p>
+  </div>
+
+  <div class="contact-cards">
+    <a id="whatsapp-contact-link"
+       href="https://wa.me/213556662611"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contact-card whatsapp animate-on-scroll">
+      <div class="cc-icon">
+        <svg viewBox="0 0 24 24" width="48" height="48" fill="#25d366">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+      </div>
+      <h3 data-i18n="contact.whatsapp">Discuter sur WhatsApp</h3>
+      <p data-i18n="contact.whatsappDesc">Réponse rapide garantie</p>
+    </a>
+
+    <a href="mailto:adelbendisari7@gmail.com"
+       class="contact-card animate-on-scroll" style="transition-delay:0.15s">
+      <div class="cc-icon">📧</div>
+      <h3 data-i18n="contact.email">Envoyer un Email</h3>
+      <p data-i18n="contact.emailDesc">adelbendisari7@gmail.com</p>
+    </a>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     FOOTER
+     ════════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="footer-grid">
+    <!-- Brand -->
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="images/logo.png" alt="BlueWave" height="48" onerror="this.style.display='none'" />
+        <div class="logo-text">
+          <span>BlueWave</span>
+          <span>POOLS</span>
+        </div>
+      </div>
+      <p data-i18n="footer.desc">Votre spécialiste des piscines Intex originales en Algérie. Qualité, fiabilité et service au rendez-vous.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4 data-i18n="footer.links">Liens Rapides</h4>
+      <ul>
+        <li><a href="#hero"     data-i18n="nav.home">Accueil</a></li>
+        <li><a href="#products" data-i18n="nav.products">Produits</a></li>
+        <li><a href="#about"    data-i18n="nav.about">À Propos</a></li>
+        <li><a href="#contact"  data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-col">
+      <h4 data-i18n="footer.contact">Contact</h4>
+      <ul class="footer-info">
+        <li>
+          <svg width="16" height="16" fill="#25d366" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          +213 55 666 26 11
+        </li>
+        <li><img class="cat-icon-img footer-icon-img" src="images/icons/support.png" alt=""> adelbendisari7@gmail.com</li>
+        <li><img class="cat-icon-img footer-icon-img" src="images/icons/livraison.png" alt=""> <span data-i18n="footer.delivery">Livraison via ZR Express</span></li>
+        <li><img class="cat-icon-img footer-icon-img" src="images/icons/paiement.png" alt=""> <span data-i18n="footer.payment">Paiement à la livraison</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 BlueWave Pools. <span data-i18n="footer.rights">Tous droits réservés.</span></span>
+    <span>🇩🇿 <span data-i18n="footer.made">Fait avec passion en Algérie</span></span>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════════════
+     WHATSAPP FLOATING BUTTON
+     ════════════════════════════════════════════ -->
+<a id="whatsapp-float"
+   href="https://wa.me/213556662611"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="whatsapp-float"
+   aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+  <span class="whatsapp-tooltip">WhatsApp</span>
+</a>
+
+<!-- ════════════════════════════════════════════
+     PRODUCT DETAIL MODAL
+     ════════════════════════════════════════════ -->
+<div id="detail-modal" class="modal-overlay detail-overlay" role="dialog" aria-modal="true">
+  <div class="detail-box">
+
+    <button class="modal-close detail-close-btn" id="detail-close" aria-label="Fermer">✕</button>
+
+    <!-- Left: Gallery -->
+    <div class="detail-gallery">
+      <div class="gallery-main-wrap">
+        <img id="gallery-main-img" src="" alt="" class="gallery-main-img" />
+        <div class="gallery-no-img" id="gallery-no-img">
+          <span id="gallery-fallback-icon">🏊</span>
+        </div>
+        <button class="gallery-nav gallery-prev" id="gallery-prev">&#8249;</button>
+        <button class="gallery-nav gallery-next" id="gallery-next">&#8250;</button>
+      </div>
+      <div class="gallery-thumbs" id="gallery-thumbs"></div>
+    </div>
+
+    <!-- Right: Info -->
+    <div class="detail-info">
+      <div class="detail-badge-wrap" id="detail-badge-wrap"></div>
+      <h2 class="detail-name" id="detail-name">—</h2>
+      <p class="detail-ref-line">
+        <span>Réf :</span> <strong id="detail-ref">—</strong>
+      </p>
+      <p class="detail-price-line" id="detail-price">—</p>
+
+      <!-- Specs -->
+      <div class="detail-specs-wrap">
+        <h4 class="detail-specs-title">📋 <span data-i18n-detail="specsTitle">Caractéristiques techniques</span></h4>
+        <div class="detail-specs-table" id="detail-specs-table">
+          <p class="specs-loading">Chargement…</p>
+        </div>
+      </div>
+
+      <!-- Add to cart -->
+      <div class="detail-actions">
+        <div class="qty-selector">
+          <button class="qty-btn" id="detail-qty-minus">−</button>
+          <span class="qty-val" id="detail-qty">1</span>
+          <button class="qty-btn" id="detail-qty-plus">+</button>
+        </div>
+        <button class="btn-add-cart detail-add-btn" id="detail-add-cart">
+          <img class="cat-icon-img btn-icon-img" src="images/icons/accessoires.png" alt=""> <span id="detail-add-label">Ajouter au panier</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     CART OVERLAY
+     ════════════════════════════════════════════ -->
+<div class="cart-overlay" id="cart-overlay"></div>
+
+<!-- ════════════════════════════════════════════
+     CART DRAWER
+     ════════════════════════════════════════════ -->
+<aside class="cart-drawer" id="cart-drawer" aria-label="Mon Panier">
+  <div class="cart-header">
+    <h3 data-i18n="cart.title">Mon Panier</h3>
+    <button class="cart-close" id="cart-close" aria-label="Fermer">✕</button>
+  </div>
+
+  <div class="cart-body">
+    <p class="cart-empty" id="cart-empty" data-i18n="cart.empty">Votre panier est vide</p>
+    <div class="cart-items" id="cart-items"></div>
+  </div>
+
+  <div class="cart-footer" id="cart-footer" style="display:none">
+    <div class="cart-subtotal">
+      <span data-i18n="cart.subtotal">Total articles</span>
+      <span id="cart-subtotal-val">0 DA</span>
+    </div>
+    <button class="btn-checkout" id="btn-checkout">
+      <span data-i18n="cart.checkout">Passer la commande</span>
+    </button>
+  </div>
+</aside>
+
+<!-- ════════════════════════════════════════════
+     ORDER MODAL
+     ════════════════════════════════════════════ -->
+<div id="order-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Commander">
+  <div class="modal-box">
+    <!-- Header -->
+    <div class="modal-header">
+      <h2 class="modal-title" data-i18n="modal.title">Passer une Commande</h2>
+      <button class="modal-close" id="modal-close" aria-label="Fermer">✕</button>
+    </div>
+
+    <!-- Cart Summary (rendered by JS) -->
+    <div class="modal-cart-summary" id="modal-cart-summary"></div>
+
+    <!-- Form Wrapper -->
+    <div id="form-wrapper">
+      <form class="modal-form" id="order-form" novalidate>
+
+        <!-- Nom / Prénom -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nom">
+              <span data-i18n="modal.nom">Nom</span>
+              <span class="req">*</span>
+            </label>
+            <input type="text" id="nom" name="nom"
+                   data-i18n-placeholder="modal.nomPh"
+                   placeholder="Votre nom"
+                   autocomplete="family-name" />
+            <span class="error-msg" data-i18n="modal.required">Ce champ est obligatoire</span>
+          </div>
+          <div class="form-group">
+            <label for="prenom">
+              <span data-i18n="modal.prenom">Prénom</span>
+              <span class="req">*</span>
+            </label>
+            <input type="text" id="prenom" name="prenom"
+                   data-i18n-placeholder="modal.prenomPh"
+                   placeholder="Votre prénom"
+                   autocomplete="given-name" />
+            <span class="error-msg" data-i18n="modal.required">Ce champ est obligatoire</span>
+          </div>
+        </div>
+
+        <!-- Téléphone -->
+        <div class="form-group">
+          <label for="telephone">
+            <span data-i18n="modal.telephone">Numéro de Téléphone</span>
+            <span class="req">*</span>
+          </label>
+          <input type="tel" id="telephone" name="telephone"
+                 data-i18n-placeholder="modal.telPh"
+                 placeholder="Ex: 0555 123 456"
+                 autocomplete="tel" />
+          <span class="error-msg" data-i18n="modal.required">Ce champ est obligatoire</span>
+        </div>
+
+        <!-- Wilaya -->
+        <div class="form-group">
+          <label for="wilaya">
+            <span data-i18n="modal.wilaya">Wilaya</span>
+            <span class="req">*</span>
+          </label>
+          <select id="wilaya" name="wilaya">
+            <option value="">Sélectionner une wilaya</option>
+            <!-- Populated by JS -->
+          </select>
+          <span class="error-msg" data-i18n="modal.required">Ce champ est obligatoire</span>
+        </div>
+
+        <!-- Commune -->
+        <div class="form-group">
+          <label for="commune">
+            <span data-i18n="modal.commune">Commune</span>
+            <span class="req">*</span>
+          </label>
+          <select id="commune" name="commune" disabled>
+            <option value="">Sélectionner une commune</option>
+            <!-- Populated by JS based on wilaya -->
+          </select>
+          <span class="error-msg" data-i18n="modal.required">Ce champ est obligatoire</span>
+        </div>
+
+        <!-- Delivery Type -->
+        <div class="form-group delivery-section" id="delivery-section">
+          <label>
+            <span data-i18n="modal.deliveryType">Mode de livraison</span>
+            <span class="req">*</span>
+          </label>
+          <div class="delivery-cards">
+            <label class="delivery-card" id="card-domicile">
+              <input type="radio" id="radio-domicile" name="delivery_type" value="domicile" checked>
+              <div class="delivery-card-body">
+                <span class="dc-icon">🏠</span>
+                <div>
+                  <span class="dc-label" data-i18n="modal.domicile">À domicile</span>
+                  <span class="dc-price" id="dc-price-domicile">—</span>
+                </div>
+              </div>
+            </label>
+            <label class="delivery-card" id="card-bureau">
+              <input type="radio" id="radio-bureau" name="delivery_type" value="bureau">
+              <div class="delivery-card-body">
+                <span class="dc-icon">🏪</span>
+                <div>
+                  <span class="dc-label" data-i18n="modal.bureau">Stop Desk</span>
+                  <span class="dc-price" id="dc-price-bureau">—</span>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- No-delivery warning -->
+        <div class="no-delivery-msg" id="no-delivery-msg" style="display:none">
+          <span>⚠️</span>
+          <span data-i18n="modal.noDelivery">ZR Express ne dessert pas encore cette wilaya. Contactez-nous sur WhatsApp.</span>
+        </div>
+
+        <!-- Price Summary -->
+        <div class="price-summary" id="price-summary" style="display:none">
+          <div class="ps-row">
+            <span data-i18n="modal.productPrice">Prix du produit</span>
+            <span id="ps-product">—</span>
+          </div>
+          <div class="ps-row">
+            <span data-i18n="modal.deliveryCost">Frais de livraison</span>
+            <span id="ps-delivery">—</span>
+          </div>
+          <div class="ps-row ps-total">
+            <span data-i18n="modal.total">Total à payer</span>
+            <span id="ps-total">—</span>
+          </div>
+        </div>
+
+        <!-- Notes / Adresse -->
+        <div class="form-group" id="notes-group">
+          <label for="notes">
+            <span id="notes-label" data-i18n="modal.notes">Notes</span>
+            <span class="req" id="notes-req" style="display:none">*</span>
+          </label>
+          <textarea id="notes" name="notes" rows="3"
+                    placeholder="Adresse précise, questions..."></textarea>
+          <span class="error-msg" id="notes-error"></span>
+        </div>
+
+        <!-- Payment Note -->
+        <div class="modal-payment-note">
+          <img class="cat-icon-img footer-icon-img" src="images/icons/paiement.png" alt=""> <span data-i18n="modal.payment">Paiement à la livraison · ZR Express</span>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn-submit" data-i18n="modal.submit">
+          Envoyer la Commande
+        </button>
+      </form>
+    </div>
+
+    <!-- Result (success/error) -->
+    <div class="modal-result" id="modal-result">
+      <div class="result-icon" id="result-icon">✅</div>
+      <h3 class="result-title" id="result-title">Commande Envoyée !</h3>
+      <p class="result-msg" id="result-msg">Nous vous contacterons très bientôt.</p>
+      <button class="btn-primary" onclick="closeModal()" style="margin-top:1rem">
+        <span data-i18n="modal.close">Fermer</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     SCRIPTS
+     ════════════════════════════════════════════ -->
+<script src="js/algeria.js"></script>
+<script src="js/delivery.js"></script>
+<script src="js/products.js"></script>
+<script src="js/specs.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
