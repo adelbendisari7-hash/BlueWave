@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initWilayaSelect();
   initDeliveryListeners();
   initScrollAnimations();
+  initLightbox();
   applyTranslations();
   initWhatsApp();
 });
@@ -783,6 +784,64 @@ function calculateTotal() {
   document.getElementById("ps-total").textContent    = total.toLocaleString("fr-DZ") + " " + unit;
 
   priceSummary.style.display = "";
+}
+
+// ════════════════════════════════════════════════════════
+// LIGHTBOX
+// ════════════════════════════════════════════════════════
+function initLightbox() {
+  const overlay   = document.getElementById("lightbox");
+  const img       = document.getElementById("lightbox-img");
+  const closeBtn  = document.getElementById("lightbox-close");
+  const prevBtn   = document.getElementById("lightbox-prev");
+  const nextBtn   = document.getElementById("lightbox-next");
+  const counter   = document.getElementById("lightbox-counter");
+  if (!overlay || !img) return;
+
+  function openLightbox(idx) {
+    if (galleryImages.length === 0) return;
+    galleryIndex = (idx + galleryImages.length) % galleryImages.length;
+    img.src = encodeImagePath(galleryImages[galleryIndex]);
+    counter.textContent = galleryImages.length > 1
+      ? `${galleryIndex + 1} / ${galleryImages.length}` : "";
+    prevBtn.style.display = galleryImages.length > 1 ? "" : "none";
+    nextBtn.style.display = galleryImages.length > 1 ? "" : "none";
+    overlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    overlay.classList.remove("open");
+    document.body.style.overflow = "";
+    img.src = "";
+  }
+
+  function navigate(dir) {
+    if (galleryImages.length === 0) return;
+    galleryIndex = (galleryIndex + dir + galleryImages.length) % galleryImages.length;
+    img.src = encodeImagePath(galleryImages[galleryIndex]);
+    counter.textContent = galleryImages.length > 1
+      ? `${galleryIndex + 1} / ${galleryImages.length}` : "";
+  }
+
+  document.getElementById("gallery-main-img")?.addEventListener("click", () => {
+    openLightbox(galleryIndex);
+  });
+
+  closeBtn.addEventListener("click", closeLightbox);
+  prevBtn.addEventListener("click", () => navigate(-1));
+  nextBtn.addEventListener("click", () => navigate(1));
+
+  overlay.addEventListener("click", e => {
+    if (e.target === overlay) closeLightbox();
+  });
+
+  document.addEventListener("keydown", e => {
+    if (!overlay.classList.contains("open")) return;
+    if (e.key === "Escape")     closeLightbox();
+    if (e.key === "ArrowLeft")  navigate(-1);
+    if (e.key === "ArrowRight") navigate(1);
+  });
 }
 
 // ════════════════════════════════════════════════════════
