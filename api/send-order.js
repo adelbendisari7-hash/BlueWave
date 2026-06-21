@@ -1,6 +1,6 @@
-import nodemailer from "nodemailer";
+const nodemailer = require("nodemailer");
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   if (req.method === "OPTIONS") return res.status(200).end();
@@ -29,7 +29,7 @@ export default async function handler(req, res) {
   const html = `
   <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto">
     <div style="background:#1a3a8f;color:#fff;padding:20px;border-radius:8px 8px 0 0">
-      <h2 style="margin:0">🌊 Nouvelle Commande BlueWave</h2>
+      <h2 style="margin:0">Nouvelle Commande BlueWave</h2>
       <p style="margin:5px 0 0;opacity:0.8">${items.length} article(s)</p>
     </div>
     <div style="padding:20px;border:1px solid #ddd;border-top:none">
@@ -73,13 +73,13 @@ export default async function handler(req, res) {
     await transporter.sendMail({
       from: `"BlueWave Pools" <${process.env.SMTP_USER}>`,
       to: process.env.SMTP_USER,
-      subject: `Nouvelle Commande BlueWave (${items.length} article(s)) — ${prenom} ${nom} (${wilaya})`,
+      subject: `Nouvelle Commande — ${prenom} ${nom} (${wilaya}) — ${Number(total_price).toLocaleString("fr-DZ")} ${unit}`,
       html,
     });
 
     return res.status(200).json({ success: true });
   } catch (err) {
-    console.error(err);
-    return res.status(200).json({ success: true }); // still return success so user isn't alarmed
+    console.error("BlueWave email error:", err.message);
+    return res.status(200).json({ success: false, emailError: true });
   }
-}
+};

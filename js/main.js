@@ -503,16 +503,22 @@ async function handleOrderSubmit(e) {
   try {
     const res  = await fetch("api/send-order", { method: "POST", headers: {"Content-Type":"application/json"}, body: JSON.stringify(Object.fromEntries(formData)) });
     const data = await res.json();
-    showModalResult(data.success);
+    if (data.success) {
+      showModalResult("success");
+    } else if (data.emailError) {
+      showModalResult("emailError");
+    } else {
+      showModalResult("error");
+    }
   } catch {
-    showModalResult(false);
+    showModalResult("error");
   } finally {
     submitBtn.disabled = false;
     submitBtn.textContent = t("modal.submit");
   }
 }
 
-function showModalResult(success) {
+function showModalResult(state) {
   const formWrap = document.getElementById("form-wrapper");
   const result   = document.getElementById("modal-result");
   const iconEl   = document.getElementById("result-icon");
@@ -521,10 +527,22 @@ function showModalResult(success) {
 
   if (formWrap) formWrap.style.display = "none";
   if (result)   result.classList.add("show");
-  if (iconEl)   iconEl.textContent  = success ? "✅" : "❌";
-  if (titleEl)  titleEl.textContent = success ? t("modal.successTitle") : "Oops!";
-  if (msgEl)    msgEl.textContent   = success ? t("modal.successMsg")   : t("modal.errorMsg");
-  if (success) { cart = []; updateCartBadge(); renderCart(); }
+
+  if (state === "success") {
+    if (iconEl)   iconEl.textContent  = "✅";
+    if (titleEl)  titleEl.textContent = t("modal.successTitle");
+    if (msgEl)    msgEl.textContent   = t("modal.successMsg");
+    cart = []; updateCartBadge(); renderCart();
+  } else if (state === "emailError") {
+    if (iconEl)   iconEl.textContent  = "✅";
+    if (titleEl)  titleEl.textContent = t("modal.successTitle");
+    if (msgEl)    msgEl.textContent   = t("modal.emailErrorMsg");
+    cart = []; updateCartBadge(); renderCart();
+  } else {
+    if (iconEl)   iconEl.textContent  = "❌";
+    if (titleEl)  titleEl.textContent = "Oops!";
+    if (msgEl)    msgEl.textContent   = t("modal.errorMsg");
+  }
 }
 
 // ════════════════════════════════════════════════════════
