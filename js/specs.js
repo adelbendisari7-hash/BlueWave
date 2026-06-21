@@ -324,11 +324,11 @@ const PRODUCT_SPECS = {
     age:         "6 ans et +"
   },
   "68241": {
-    dimensions:  "320 × 81 × 15 cm (gonflé)",
-    poids:       "8,5 kg",
+    dimensions:  "240 × 76 × 13 cm (gonflé)",
+    poids:       "7,5 kg",
     structure:   "Drop Stitch double paroi, 3 ailerons amovibles",
     materiau:    "PVC haute densité, pad EVA antidérapant",
-    charge_max:  "120 kg",
+    charge_max:  "100 kg",
     contenu:     "Pagaie réglable + pompe + sac de transport + leash",
     age:         "14 ans et +"
   },

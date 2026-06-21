@@ -301,10 +301,10 @@ const PRODUCTS = [
   },
   {
     id: "nt-005", category: "nautique", ref: "68241",
-    nameF: "Intex Stand Up Paddle Gonflable AquaQuest Pro 3.20m × 81cm × 15cm",
-    nameA: "إنتيكس لوح Stand Up Paddle نفخ AquaQuest Pro 3.20م × 81سم × 15سم",
-    descF: "Stand Up Paddle gonflable AquaQuest Pro — légèreté et performance réunies. Construction Drop Stitch double paroi ultra-rigide pour une stabilité parfaite sur l'eau. Pad EVA antidérapant confortable. 3 ailerons amovibles pour une direction précise. Charge max : 120 kg. Kit complet : pagaie réglable + pompe à main + sac de transport + leash de sécurité.",
-    descA: "لوح Stand Up Paddle نفخ AquaQuest Pro — الخفة والأداء معاً. بناء Drop Stitch مزدوج الجدار فائق الصلابة للاستقرار المثالي على الماء. وسادة EVA مضادة للانزلاق. 3 زعانف قابلة للفك للتوجيه الدقيق. الحمولة القصوى: 120كغ. طقم كامل: مجداف قابل للضبط + مضخة + حقيبة + حزام أمان.",
+    nameF: "Intex Stand Up Paddle Gonflable AquaQuest 240 2.40m × 76cm × 13cm",
+    nameA: "إنتيكس لوح Stand Up Paddle نفخ AquaQuest 240 — 2.40م × 76سم × 13سم",
+    descF: "Stand Up Paddle gonflable AquaQuest 240 — compact, léger et facile à maîtriser. Construction Drop Stitch double paroi rigide pour une stabilité parfaite sur l'eau. Pad EVA antidérapant confortable. 3 ailerons amovibles pour une direction précise. Charge max : 100 kg. Kit complet : pagaie réglable + pompe à main + sac de transport + leash de sécurité.",
+    descA: "لوح Stand Up Paddle نفخ AquaQuest 240 — مدمج وخفيف وسهل الإتقان. بناء Drop Stitch مزدوج الجدار صلب للاستقرار المثالي على الماء. وسادة EVA مضادة للانزلاق. 3 زعانف قابلة للفك. الحمولة القصوى: 100كغ. طقم كامل: مجداف قابل للضبط + مضخة + حقيبة + حزام أمان.",
     price: 85000, badge: "Sport Pro", badgeA: "رياضة احترافية"
   },
   {
