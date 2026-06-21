@@ -164,6 +164,16 @@ const PRODUCT_SPECS = {
     age:         "3 ans et +"
   },
 
+  "56475": {
+    dimensions:  "229 × 229 × 66 cm",
+    capacite:    "700 L (approx.)",
+    poids:       "5 kg (approx.)",
+    structure:   "Gonflable 3 anneaux, sièges et repose-pieds intégrés",
+    materiau:    "PVC vinyl haute qualité résistant aux UV",
+    filtre:      "Non incluse",
+    age:         "6 ans et +"
+  },
+
   // ── PISCINES ENFANTS ─────────────────────────────────────
 
   "57190": {

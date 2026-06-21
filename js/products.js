@@ -120,7 +120,7 @@ const PRODUCTS = [
     price: 28500, badge: "Kit Complet", badgeA: "طقم كامل"
   },
   {
-    id: "ap-006", category: "autoportante", ref: "salon",
+    id: "ap-006", category: "autoportante", ref: "56475",
     nameF: "Intex Piscine Gonflable Family Lounge 2.29m × 2.29m × 66cm",
     nameA: "إنتيكس حوض Family Lounge نفخ 2.29م × 2.29م × 66سم",
     descF: "Le salon aquatique de la famille ! Sièges et repose-pieds gonflables intégrés pour se détendre dans l'eau sans effort. PVC haute qualité résistant aux UV. Capacité : env. 700 L. Gonflage rapide avec pompe à air. Parfaite pour les adultes qui souhaitent se prélasser tout en gardant un œil sur les enfants.",
