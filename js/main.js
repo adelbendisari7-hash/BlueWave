@@ -786,14 +786,12 @@ function calculateTotal() {
 }
 
 // ════════════════════════════════════════════════════════
-// WHATSAPP
+// MESSENGER
 // ════════════════════════════════════════════════════════
 function initWhatsApp() {
-  const btn = document.getElementById("whatsapp-float");
+  const btn = document.getElementById("messenger-float");
   if (!btn) return;
-  const phone   = "213556662611";
-  const message = encodeURIComponent(t("whatsappMsg"));
-  btn.href = `https://wa.me/${phone}?text=${message}`;
+  btn.href = "https://m.me/61591169635922";
 }
 
 // ════════════════════════════════════════════════════════

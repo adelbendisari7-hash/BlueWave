@@ -952,8 +952,8 @@ body.rtl .about-text .section-header { text-align: right; }
   color: var(--text-muted);
 }
 
-.contact-card.whatsapp { border-color: rgba(37, 211, 102, 0.2); }
-.contact-card.whatsapp:hover { border-color: rgba(37, 211, 102, 0.5); box-shadow: 0 0 40px rgba(37, 211, 102, 0.1); }
+.contact-card.messenger { border-color: rgba(0, 132, 255, 0.2); }
+.contact-card.messenger:hover { border-color: rgba(0, 132, 255, 0.5); box-shadow: 0 0 40px rgba(0, 132, 255, 0.1); }
 
 /* ════════════════════════════════════════════════════════
    FOOTER
@@ -1025,7 +1025,7 @@ body.rtl .footer-col h4 { letter-spacing: 0; }
 .footer-bottom span { display: flex; align-items: center; gap: 6px; }
 
 /* ════════════════════════════════════════════════════════
-   WHATSAPP FLOATING BUTTON
+   MESSENGER FLOATING BUTTON
    ════════════════════════════════════════════════════════ */
 .whatsapp-float {
   position: fixed;
@@ -1033,12 +1033,12 @@ body.rtl .footer-col h4 { letter-spacing: 0; }
   right: 28px;
   z-index: 900;
   width: 60px; height: 60px;
-  background: linear-gradient(135deg, #25d366, #128c7e);
+  background: linear-gradient(135deg, #0084ff, #0050c9);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 132, 255, 0.4);
   transition: var(--transition);
   animation: whatsappPulse 3s ease-in-out infinite;
 }
@@ -1047,15 +1047,15 @@ body.rtl .whatsapp-float { right: auto; left: 28px; }
 
 .whatsapp-float:hover {
   transform: scale(1.1);
-  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 8px 30px rgba(0, 132, 255, 0.5);
   animation: none;
 }
 
 .whatsapp-float svg { width: 30px; height: 30px; fill: white; }
 
 @keyframes whatsappPulse {
-  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
-  50% { box-shadow: 0 4px 40px rgba(37, 211, 102, 0.7), 0 0 0 8px rgba(37, 211, 102, 0.1); }
+  0%, 100% { box-shadow: 0 4px 20px rgba(0, 132, 255, 0.4); }
+  50% { box-shadow: 0 4px 40px rgba(0, 132, 255, 0.7), 0 0 0 8px rgba(0, 132, 255, 0.1); }
 }
 
 .whatsapp-tooltip {

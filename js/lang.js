@@ -24,7 +24,7 @@ const LANG = {
       t3: "Paiement Livraison",
       s3: "COD / ZR Express",
       t4: "Support Client",
-      s4: "Disponible sur WhatsApp"
+      s4: "Disponible sur Messenger"
     },
     categories: {
       title: "Nos Catégories",
@@ -57,12 +57,12 @@ const LANG = {
       r3t: "Paiement à la Livraison",
       r3d: "Payez uniquement à la réception de votre commande. Zéro risque.",
       r4t: "Service Client Réactif",
-      r4d: "Notre équipe répond rapidement sur WhatsApp pour tout renseignement."
+      r4d: "Notre équipe répond rapidement sur Messenger pour tout renseignement."
     },
     contact: {
       title: "Contactez-Nous",
       subtitle: "Notre équipe est disponible pour répondre à toutes vos questions",
-      whatsapp: "Discuter sur WhatsApp",
+      whatsapp: "Discuter sur Messenger",
       whatsappDesc: "Réponse rapide garantie",
       email: "Envoyer un Email",
       emailDesc: "adelbendisari7@gmail.com"
@@ -89,7 +89,7 @@ const LANG = {
       domicile: "À domicile",
       bureau: "Stop Desk (Bureau ZR)",
       unavailable: "Non disponible",
-      noDelivery: "ZR Express ne dessert pas encore cette wilaya. Contactez-nous sur WhatsApp pour trouver une solution.",
+      noDelivery: "ZR Express ne dessert pas encore cette wilaya. Contactez-nous sur Messenger pour trouver une solution.",
       productPrice: "Prix du produit",
       deliveryCost: "Frais de livraison",
       total: "Total à payer",
@@ -98,7 +98,7 @@ const LANG = {
       successTitle: "Commande Envoyée !",
       successMsg: "Nous vous contacterons très bientôt pour confirmer votre commande. Merci !",
       emailErrorMsg: "Commande reçue ! Un problème technique a empêché l'envoi du mail de confirmation — nous vous contacterons directement par téléphone. Merci de votre confiance.",
-      errorMsg: "Une erreur est survenue. Veuillez réessayer ou nous contacter sur WhatsApp.",
+      errorMsg: "Une erreur est survenue. Veuillez réessayer ou nous contacter sur Messenger.",
       close: "Fermer",
       required: "Ce champ est obligatoire",
       payment: "Paiement à la livraison · ZR Express"
