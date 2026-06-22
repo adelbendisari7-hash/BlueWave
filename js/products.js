@@ -237,7 +237,7 @@ const PRODUCTS = [
     nameA: "إنتيكس غطاء حماية دائري قطر 2.44م",
     descF: "Bâche de protection ronde pour piscines Easy Set et tubulaires Ø 2,44 m. Protège l'eau des impuretés, feuilles, insectes et débris. Réduit l'évaporation et la consommation de produits chimiques. Polyéthylène résistant aux UV. Maintient l'eau propre plus longtemps entre deux filtrations.",
     descA: "غطاء حماية دائري لأحواض Easy Set والأنبوبية قطر 2.44م. يحمي الماء من الشوائب والأوراق والحشرات. يقلل التبخر والمواد الكيميائية. بولي إيثيلين مقاوم للأشعة فوق البنفسجية. يبقي الماء نظيفاً أطول بين الترشيحات.",
-    price: 1700, badge: null, badgeA: null
+    price: 2000, badge: null, badgeA: null
   },
   {
     id: "ba-002", category: "baches", ref: "28030",
@@ -273,7 +273,7 @@ const PRODUCTS = [
     nameA: "إنتيكس AquaQuest 320 لوح باددل سوب نفخ 3.20م × 81سم × 15سم",
     descF: "Stand Up Paddle gonflable AquaQuest 320 — performance et portabilité. Construction Drop Stitch double paroi ultra-rigide pour stabilité parfaite sur l'eau. Rails latéraux PVC double couche ultra-durables. Pad EVA antidérapant. 3 ailerons pour direction précise. Charge max : 150 kg. Kit complet : pagaie aluminium 216 cm + pompe à main + sac à dos de transport.",
     descA: "لوح Stand Up Paddle نفخ AquaQuest 320 — الأداء والتنقل معاً. بناء Drop Stitch مزدوج الجدار فائق الصلابة للاستقرار المثالي. قضبان PVC مزدوجة الطبقات. وسادة EVA مضادة للانزلاق. 3 زعانف للتوجيه الدقيق. الحمولة القصوى: 150كغ. طقم كامل: مجداف ألومنيوم 216سم + مضخة يدوية + حقيبة ظهر.",
-    price: 89000, badge: "Sport Premium", badgeA: "رياضة فاخرة"
+    price: 94000, badge: "Sport Premium", badgeA: "رياضة فاخرة"
   },
   {
     id: "nt-002", category: "nautique", ref: "68303",
