@@ -368,8 +368,8 @@ function resetModal() {
   document.getElementById("price-summary").style.display = "none";
   document.querySelectorAll(".delivery-card").forEach(c => c.classList.remove("unavailable"));
   document.querySelectorAll('input[name="delivery_type"]').forEach(r => { r.disabled = false; });
-  document.getElementById("radio-domicile").checked = true;
-  document.getElementById("radio-bureau").checked   = false;
+  document.getElementById("radio-domicile").checked = false;
+  document.getElementById("radio-bureau").checked   = true;
   document.getElementById("dc-price-domicile").textContent = "—";
   document.getElementById("dc-price-bureau").textContent   = "—";
   // Reset address field to optional state
@@ -729,13 +729,13 @@ function updateDelivery() {
   _setCard("card-domicile", "radio-domicile", "dc-price-domicile", rates.domicile, unit);
   _setCard("card-bureau",   "radio-bureau",   "dc-price-bureau",   rates.bureau,   unit);
 
-  // Auto-select first available
+  // Auto-select bureau by default, fallback to domicile
   const radioDomicile = document.getElementById("radio-domicile");
   const radioBureau   = document.getElementById("radio-bureau");
-  if (!radioDomicile.disabled) {
-    radioDomicile.checked = true;
-  } else if (!radioBureau.disabled) {
+  if (!radioBureau.disabled) {
     radioBureau.checked = true;
+  } else if (!radioDomicile.disabled) {
+    radioDomicile.checked = true;
   }
 
   calculateTotal();
