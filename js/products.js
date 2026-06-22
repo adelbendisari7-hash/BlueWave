@@ -157,10 +157,10 @@ const PRODUCTS = [
   },
   {
     id: "en-002", category: "enfants", ref: "57440",
-    nameF: "Intex Piscine Gonflable Éléphant avec Spray 2.03m × 1.52m × 74cm",
-    nameA: "إنتيكس حوض نفخ فيل مع رذاذ 2.03م × 1.52م × 74سم",
-    descF: "Piscine gonflable pour enfants design éléphant avec jet d'eau intégré pour une fraîcheur supplémentaire. Deux zones : pataugeoire profonde et zone de jeux. PVC haute qualité résistant aux UV. Capacité : env. 290 L. Gonflage facile. Pour les enfants à partir de 3 ans (supervision adulte recommandée).",
-    descA: "حوض نفخ للأطفال بتصميم فيل ورذاذ مائي مدمج للانتعاش. منطقتان: خوض عميق ومنطقة ألعاب. PVC عالي الجودة مقاوم للأشعة فوق البنفسجية. السعة: ~290 لتر. نفخ سهل. للأطفال من 3 سنوات (يُنصح بإشراف بالغ).",
+    nameF: "Intex Piscine Gonflable Baleine avec Spray 2.03m × 1.52m × 74cm",
+    nameA: "إنتيكس حوض نفخ حوت مع رذاذ 2.03م × 1.52م × 74سم",
+    descF: "Piscine gonflable pour enfants design baleine avec jet d'eau intégré pour une fraîcheur supplémentaire. Deux zones : pataugeoire profonde et zone de jeux. PVC haute qualité résistant aux UV. Capacité : env. 290 L. Gonflage facile. Pour les enfants à partir de 3 ans (supervision adulte recommandée).",
+    descA: "حوض نفخ للأطفال بتصميم حوت ورذاذ مائي مدمج للانتعاش. منطقتان: خوض عميق ومنطقة ألعاب. PVC عالي الجودة مقاوم للأشعة فوق البنفسجية. السعة: ~290 لتر. نفخ سهل. للأطفال من 3 سنوات (يُنصح بإشراف بالغ).",
     price: 8000, badge: null, badgeA: null
   },
   {
